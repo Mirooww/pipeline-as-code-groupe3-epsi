@@ -14,6 +14,12 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Learn more
+
+Cett application est hébergé en ligne grâce à Heroku,
+Acceccible ici : [https://pipeline-as-code-groupe3-b4fd657baa23.herokuapp.com/](https://pipeline-as-code-groupe3-b4fd657baa23.herokuapp.com/)
+
+
 ## Télécharger Jenkins
 
 Lancer docker sur sa machine
