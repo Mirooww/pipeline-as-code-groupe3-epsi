@@ -65,3 +65,7 @@ et l'autre permet de se connecter à l'UI jenkins
 
 Après avoir lancé le 2éme container,
 dans les logs docker, vous trouverez votre mdp admin
+
+Ensuite vous devrez télécharger le plugin nodejs via l'UI jenkins, en renseignant le mdp trouvé
+
+Et créer vore compte
