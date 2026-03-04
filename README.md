@@ -79,3 +79,5 @@ Vous référer à la doc
 
 Il faut créer une clé API sur Heroku et la mettre sur jenkins avec comme nom : HEROKU_API_TOKEN
 L'application est déployé via Jenkins
+
+Et lancement automatique de la pipeline lors du push sur la branche main
