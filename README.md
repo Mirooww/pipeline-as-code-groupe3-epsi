@@ -43,25 +43,21 @@ docker run \
   docker:dind \
   --storage-driver overlay2
 ```
-Ensuite vous devrez lancer l'image de Jenkins :
-```bash
-docker build -t myjenkins-blueocean:2.541.2-1 .
-```
 Ensuite vous devrez lancer un autre container qui est :
 ```bash
 docker run \
---name jenkins-blueocean \
---restart=on-failure \
---detach \
---network jenkins \
---env DOCKER_HOST=tcp://docker:2376 \
---env DOCKER_CERT_PATH=/certs/client \
---env DOCKER_TLS_VERIFY=1 \
---publish 8080:8080 \
---publish 50000:50000 \
---volume jenkins-data:/var/jenkins_home \
---volume jenkins-docker-certs:/certs/client:ro \
-myjenkins-blueocean:2.541.2-1 
+  --name jenkins-blueocean \
+  --restart on-failure \
+  --detach \
+  --network jenkins \
+  --env DOCKER_HOST=tcp://docker:2376 \
+  --env DOCKER_CERT_PATH=/certs/client \
+  --env DOCKER_TLS_VERIFY=1 \
+  --publish 8080:8080 \
+  --publish 50000:50000 \
+  --volume jenkins-data:/var/jenkins_home \
+  --volume jenkins-docker-certs:/certs/client:ro \
+  jenkins/jenkins:lts
 ```
 
 Le premier permet de build des app avec jenkins en utilisant docker,
