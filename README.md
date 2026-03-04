@@ -43,7 +43,10 @@ docker run \
   docker:dind \
   --storage-driver overlay2
 ```
-
+Ensuite vous devrez lancer l'image de Jenkins :
+```bash
+docker build -t myjenkins-blueocean:2.541.2-1 .
+```
 Ensuite vous devrez lancer un autre container qui est :
 ```bash
 docker run \
