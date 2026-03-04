@@ -22,6 +22,7 @@ Acceccible ici : [https://pipeline-as-code-groupe3-b4fd657baa23.herokuapp.com/](
 
 ## Télécharger Jenkins
 
+## SUR LINUX 
 Lancer docker sur sa machine
 
 Créer le network jenkins
@@ -69,3 +70,6 @@ dans les logs docker, vous trouverez votre mdp admin
 Ensuite vous devrez télécharger le plugin nodejs via l'UI jenkins, en renseignant le mdp trouvé
 
 Et créer vore compte
+
+## SUR WINDOWS
+Vous référer à la doc
